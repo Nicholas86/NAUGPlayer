@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3AD5C9523326FC1000F9C55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AD5C9423326FC1000F9C55 /* AppDelegate.m */; };
+		F3AD5C9823326FC1000F9C55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AD5C9723326FC1000F9C55 /* ViewController.m */; };
+		F3AD5C9B23326FC1000F9C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AD5C9923326FC1000F9C55 /* Main.storyboard */; };
+		F3AD5C9D23326FC1000F9C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3AD5C9C23326FC1000F9C55 /* Assets.xcassets */; };
+		F3AD5CA023326FC1000F9C55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AD5C9E23326FC1000F9C55 /* LaunchScreen.storyboard */; };
+		F3AD5CA323326FC1000F9C55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AD5CA223326FC1000F9C55 /* main.m */; };
+		F3AD5CAD23326FC1000F9C55 /* NAUGPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AD5CAC23326FC1000F9C55 /* NAUGPlayerTests.m */; };
+		F3AD5CB823326FC2000F9C55 /* NAUGPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AD5CB723326FC2000F9C55 /* NAUGPlayerUITests.m */; };
+		F3AD5CCC233270B6000F9C55 /* NAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AD5CC9233270B6000F9C55 /* NAudioSession.m */; };
+		F3AD5CCD233270B6000F9C55 /* AVAudioSession+RouteUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AD5CCA233270B6000F9C55 /* AVAudioSession+RouteUtils.m */; };
+		F3AD5CD0233270CC000F9C55 /* NAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AD5CCF233270CC000F9C55 /* NAudioUnit.m */; };
+		F3AD5CD723327132000F9C55 /* MP3Sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3AD5CD223327132000F9C55 /* MP3Sample.mp3 */; };
+		F3AD5CD823327132000F9C55 /* MiAmor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3AD5CD323327132000F9C55 /* MiAmor.mp3 */; };
+		F3AD5CD923327132000F9C55 /* CAFSample.caf in Resources */ = {isa = PBXBuildFile; fileRef = F3AD5CD423327132000F9C55 /* CAFSample.caf */; };
+		F3AD5CDA23327132000F9C55 /* M4ASample.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F3AD5CD523327132000F9C55 /* M4ASample.m4a */; };
+		F3AD5CDB23327132000F9C55 /* 0fe2a7e9c51012210eaaa1e2b103b1b1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F3AD5CD623327132000F9C55 /* 0fe2a7e9c51012210eaaa1e2b103b1b1.m4a */; };
+		F3AD5CDF233271C8000F9C55 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AD5CDD233271C8000F9C55 /* CommonUtil.m */; };
+		F3AD5CE6233272A4000F9C55 /* NAUGraphPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AD5CE5233272A4000F9C55 /* NAUGraphPlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3AD5CA923326FC1000F9C55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3AD5C8823326FC1000F9C55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3AD5C8F23326FC1000F9C55;
+			remoteInfo = NAUGPlayer;
+		};
+		F3AD5CB423326FC2000F9C55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3AD5C8823326FC1000F9C55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3AD5C8F23326FC1000F9C55;
+			remoteInfo = NAUGPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3AD5C9023326FC1000F9C55 /* NAUGPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NAUGPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3AD5C9323326FC1000F9C55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3AD5C9423326FC1000F9C55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3AD5C9623326FC1000F9C55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F3AD5C9723326FC1000F9C55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F3AD5C9A23326FC1000F9C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3AD5C9C23326FC1000F9C55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3AD5C9F23326FC1000F9C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3AD5CA123326FC1000F9C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3AD5CA223326FC1000F9C55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3AD5CA823326FC1000F9C55 /* NAUGPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NAUGPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3AD5CAC23326FC1000F9C55 /* NAUGPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAUGPlayerTests.m; sourceTree = "<group>"; };
+		F3AD5CAE23326FC1000F9C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3AD5CB323326FC2000F9C55 /* NAUGPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NAUGPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3AD5CB723326FC2000F9C55 /* NAUGPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAUGPlayerUITests.m; sourceTree = "<group>"; };
+		F3AD5CB923326FC2000F9C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3AD5CC8233270B6000F9C55 /* NAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAudioSession.h; sourceTree = "<group>"; };
+		F3AD5CC9233270B6000F9C55 /* NAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAudioSession.m; sourceTree = "<group>"; };
+		F3AD5CCA233270B6000F9C55 /* AVAudioSession+RouteUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioSession+RouteUtils.m"; sourceTree = "<group>"; };
+		F3AD5CCB233270B6000F9C55 /* AVAudioSession+RouteUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioSession+RouteUtils.h"; sourceTree = "<group>"; };
+		F3AD5CCE233270CC000F9C55 /* NAudioUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAudioUnit.h; sourceTree = "<group>"; };
+		F3AD5CCF233270CC000F9C55 /* NAudioUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAudioUnit.m; sourceTree = "<group>"; };
+		F3AD5CD223327132000F9C55 /* MP3Sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MP3Sample.mp3; sourceTree = "<group>"; };
+		F3AD5CD323327132000F9C55 /* MiAmor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MiAmor.mp3; sourceTree = "<group>"; };
+		F3AD5CD423327132000F9C55 /* CAFSample.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CAFSample.caf; sourceTree = "<group>"; };
+		F3AD5CD523327132000F9C55 /* M4ASample.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = M4ASample.m4a; sourceTree = "<group>"; };
+		F3AD5CD623327132000F9C55 /* 0fe2a7e9c51012210eaaa1e2b103b1b1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0fe2a7e9c51012210eaaa1e2b103b1b1.m4a; sourceTree = "<group>"; };
+		F3AD5CDD233271C8000F9C55 /* CommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtil.m; sourceTree = "<group>"; };
+		F3AD5CDE233271C8000F9C55 /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
+		F3AD5CE4233272A4000F9C55 /* NAUGraphPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAUGraphPlayer.h; sourceTree = "<group>"; };
+		F3AD5CE5233272A4000F9C55 /* NAUGraphPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAUGraphPlayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3AD5C8D23326FC1000F9C55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AD5CA523326FC1000F9C55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AD5CB023326FC2000F9C55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3AD5C8723326FC1000F9C55 = {
+			isa = PBXGroup;
+			children = (
+				F3AD5C9223326FC1000F9C55 /* NAUGPlayer */,
+				F3AD5CAB23326FC1000F9C55 /* NAUGPlayerTests */,
+				F3AD5CB623326FC2000F9C55 /* NAUGPlayerUITests */,
+				F3AD5C9123326FC1000F9C55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3AD5C9123326FC1000F9C55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD5C9023326FC1000F9C55 /* NAUGPlayer.app */,
+				F3AD5CA823326FC1000F9C55 /* NAUGPlayerTests.xctest */,
+				F3AD5CB323326FC2000F9C55 /* NAUGPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3AD5C9223326FC1000F9C55 /* NAUGPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD5CE02332720E000F9C55 /* Player */,
+				F3AD5CDC233271C7000F9C55 /* utils */,
+				F3AD5CD123327132000F9C55 /* resource */,
+				F3AD5CC72332709D000F9C55 /* NAudioUnit */,
+				F3AD5CC62332707A000F9C55 /* NAudioSession */,
+				F3AD5C9323326FC1000F9C55 /* AppDelegate.h */,
+				F3AD5C9423326FC1000F9C55 /* AppDelegate.m */,
+				F3AD5C9623326FC1000F9C55 /* ViewController.h */,
+				F3AD5C9723326FC1000F9C55 /* ViewController.m */,
+				F3AD5C9923326FC1000F9C55 /* Main.storyboard */,
+				F3AD5C9C23326FC1000F9C55 /* Assets.xcassets */,
+				F3AD5C9E23326FC1000F9C55 /* LaunchScreen.storyboard */,
+				F3AD5CA123326FC1000F9C55 /* Info.plist */,
+				F3AD5CA223326FC1000F9C55 /* main.m */,
+			);
+			path = NAUGPlayer;
+			sourceTree = "<group>";
+		};
+		F3AD5CAB23326FC1000F9C55 /* NAUGPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD5CAC23326FC1000F9C55 /* NAUGPlayerTests.m */,
+				F3AD5CAE23326FC1000F9C55 /* Info.plist */,
+			);
+			path = NAUGPlayerTests;
+			sourceTree = "<group>";
+		};
+		F3AD5CB623326FC2000F9C55 /* NAUGPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD5CB723326FC2000F9C55 /* NAUGPlayerUITests.m */,
+				F3AD5CB923326FC2000F9C55 /* Info.plist */,
+			);
+			path = NAUGPlayerUITests;
+			sourceTree = "<group>";
+		};
+		F3AD5CC62332707A000F9C55 /* NAudioSession */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD5CCB233270B6000F9C55 /* AVAudioSession+RouteUtils.h */,
+				F3AD5CCA233270B6000F9C55 /* AVAudioSession+RouteUtils.m */,
+				F3AD5CC8233270B6000F9C55 /* NAudioSession.h */,
+				F3AD5CC9233270B6000F9C55 /* NAudioSession.m */,
+			);
+			path = NAudioSession;
+			sourceTree = "<group>";
+		};
+		F3AD5CC72332709D000F9C55 /* NAudioUnit */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD5CCE233270CC000F9C55 /* NAudioUnit.h */,
+				F3AD5CCF233270CC000F9C55 /* NAudioUnit.m */,
+			);
+			path = NAudioUnit;
+			sourceTree = "<group>";
+		};
+		F3AD5CD123327132000F9C55 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD5CD223327132000F9C55 /* MP3Sample.mp3 */,
+				F3AD5CD323327132000F9C55 /* MiAmor.mp3 */,
+				F3AD5CD423327132000F9C55 /* CAFSample.caf */,
+				F3AD5CD523327132000F9C55 /* M4ASample.m4a */,
+				F3AD5CD623327132000F9C55 /* 0fe2a7e9c51012210eaaa1e2b103b1b1.m4a */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		F3AD5CDC233271C7000F9C55 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD5CDD233271C8000F9C55 /* CommonUtil.m */,
+				F3AD5CDE233271C8000F9C55 /* CommonUtil.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F3AD5CE02332720E000F9C55 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD5CE4233272A4000F9C55 /* NAUGraphPlayer.h */,
+				F3AD5CE5233272A4000F9C55 /* NAUGraphPlayer.m */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3AD5C8F23326FC1000F9C55 /* NAUGPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3AD5CBC23326FC2000F9C55 /* Build configuration list for PBXNativeTarget "NAUGPlayer" */;
+			buildPhases = (
+				F3AD5C8C23326FC1000F9C55 /* Sources */,
+				F3AD5C8D23326FC1000F9C55 /* Frameworks */,
+				F3AD5C8E23326FC1000F9C55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NAUGPlayer;
+			productName = NAUGPlayer;
+			productReference = F3AD5C9023326FC1000F9C55 /* NAUGPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3AD5CA723326FC1000F9C55 /* NAUGPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3AD5CBF23326FC2000F9C55 /* Build configuration list for PBXNativeTarget "NAUGPlayerTests" */;
+			buildPhases = (
+				F3AD5CA423326FC1000F9C55 /* Sources */,
+				F3AD5CA523326FC1000F9C55 /* Frameworks */,
+				F3AD5CA623326FC1000F9C55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3AD5CAA23326FC1000F9C55 /* PBXTargetDependency */,
+			);
+			name = NAUGPlayerTests;
+			productName = NAUGPlayerTests;
+			productReference = F3AD5CA823326FC1000F9C55 /* NAUGPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3AD5CB223326FC2000F9C55 /* NAUGPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3AD5CC223326FC2000F9C55 /* Build configuration list for PBXNativeTarget "NAUGPlayerUITests" */;
+			buildPhases = (
+				F3AD5CAF23326FC2000F9C55 /* Sources */,
+				F3AD5CB023326FC2000F9C55 /* Frameworks */,
+				F3AD5CB123326FC2000F9C55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3AD5CB523326FC2000F9C55 /* PBXTargetDependency */,
+			);
+			name = NAUGPlayerUITests;
+			productName = NAUGPlayerUITests;
+			productReference = F3AD5CB323326FC2000F9C55 /* NAUGPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3AD5C8823326FC1000F9C55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "泽娄";
+				TargetAttributes = {
+					F3AD5C8F23326FC1000F9C55 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					F3AD5CA723326FC1000F9C55 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = F3AD5C8F23326FC1000F9C55;
+					};
+					F3AD5CB223326FC2000F9C55 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = F3AD5C8F23326FC1000F9C55;
+					};
+				};
+			};
+			buildConfigurationList = F3AD5C8B23326FC1000F9C55 /* Build configuration list for PBXProject "NAUGPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3AD5C8723326FC1000F9C55;
+			productRefGroup = F3AD5C9123326FC1000F9C55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3AD5C8F23326FC1000F9C55 /* NAUGPlayer */,
+				F3AD5CA723326FC1000F9C55 /* NAUGPlayerTests */,
+				F3AD5CB223326FC2000F9C55 /* NAUGPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3AD5C8E23326FC1000F9C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AD5CDA23327132000F9C55 /* M4ASample.m4a in Resources */,
+				F3AD5CA023326FC1000F9C55 /* LaunchScreen.storyboard in Resources */,
+				F3AD5CDB23327132000F9C55 /* 0fe2a7e9c51012210eaaa1e2b103b1b1.m4a in Resources */,
+				F3AD5CD823327132000F9C55 /* MiAmor.mp3 in Resources */,
+				F3AD5CD723327132000F9C55 /* MP3Sample.mp3 in Resources */,
+				F3AD5CD923327132000F9C55 /* CAFSample.caf in Resources */,
+				F3AD5C9D23326FC1000F9C55 /* Assets.xcassets in Resources */,
+				F3AD5C9B23326FC1000F9C55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AD5CA623326FC1000F9C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AD5CB123326FC2000F9C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3AD5C8C23326FC1000F9C55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AD5C9823326FC1000F9C55 /* ViewController.m in Sources */,
+				F3AD5CD0233270CC000F9C55 /* NAudioUnit.m in Sources */,
+				F3AD5CDF233271C8000F9C55 /* CommonUtil.m in Sources */,
+				F3AD5CA323326FC1000F9C55 /* main.m in Sources */,
+				F3AD5CCD233270B6000F9C55 /* AVAudioSession+RouteUtils.m in Sources */,
+				F3AD5CCC233270B6000F9C55 /* NAudioSession.m in Sources */,
+				F3AD5CE6233272A4000F9C55 /* NAUGraphPlayer.m in Sources */,
+				F3AD5C9523326FC1000F9C55 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AD5CA423326FC1000F9C55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AD5CAD23326FC1000F9C55 /* NAUGPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AD5CAF23326FC2000F9C55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AD5CB823326FC2000F9C55 /* NAUGPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3AD5CAA23326FC1000F9C55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3AD5C8F23326FC1000F9C55 /* NAUGPlayer */;
+			targetProxy = F3AD5CA923326FC1000F9C55 /* PBXContainerItemProxy */;
+		};
+		F3AD5CB523326FC2000F9C55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3AD5C8F23326FC1000F9C55 /* NAUGPlayer */;
+			targetProxy = F3AD5CB423326FC2000F9C55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3AD5C9923326FC1000F9C55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3AD5C9A23326FC1000F9C55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3AD5C9E23326FC1000F9C55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3AD5C9F23326FC1000F9C55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3AD5CBA23326FC2000F9C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3AD5CBB23326FC2000F9C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3AD5CBD23326FC2000F9C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2PP5K6334;
+				INFOPLIST_FILE = NAUGPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.burgeon.NAUGPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3AD5CBE23326FC2000F9C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2PP5K6334;
+				INFOPLIST_FILE = NAUGPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.burgeon.NAUGPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3AD5CC023326FC2000F9C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2PP5K6334;
+				INFOPLIST_FILE = NAUGPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.burgeon.NAUGPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NAUGPlayer.app/NAUGPlayer";
+			};
+			name = Debug;
+		};
+		F3AD5CC123326FC2000F9C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2PP5K6334;
+				INFOPLIST_FILE = NAUGPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.burgeon.NAUGPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NAUGPlayer.app/NAUGPlayer";
+			};
+			name = Release;
+		};
+		F3AD5CC323326FC2000F9C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2PP5K6334;
+				INFOPLIST_FILE = NAUGPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.burgeon.NAUGPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NAUGPlayer;
+			};
+			name = Debug;
+		};
+		F3AD5CC423326FC2000F9C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2PP5K6334;
+				INFOPLIST_FILE = NAUGPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.burgeon.NAUGPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NAUGPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3AD5C8B23326FC1000F9C55 /* Build configuration list for PBXProject "NAUGPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3AD5CBA23326FC2000F9C55 /* Debug */,
+				F3AD5CBB23326FC2000F9C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3AD5CBC23326FC2000F9C55 /* Build configuration list for PBXNativeTarget "NAUGPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3AD5CBD23326FC2000F9C55 /* Debug */,
+				F3AD5CBE23326FC2000F9C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3AD5CBF23326FC2000F9C55 /* Build configuration list for PBXNativeTarget "NAUGPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3AD5CC023326FC2000F9C55 /* Debug */,
+				F3AD5CC123326FC2000F9C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3AD5CC223326FC2000F9C55 /* Build configuration list for PBXNativeTarget "NAUGPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3AD5CC323326FC2000F9C55 /* Debug */,
+				F3AD5CC423326FC2000F9C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3AD5C8823326FC1000F9C55 /* Project object */;
+}
