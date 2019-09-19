@@ -30,13 +30,19 @@ static void CheckStatus(OSStatus status, NSString *message, BOOL fatal)
     }
 }
 
+typedef void(^Progress)(UInt32 mDataByteSize);
+
 @interface NAudioUnit : NSObject
+
+@property (nonatomic, copy) Progress progress;
 
 - (instancetype)initWithFilePath:(NSURL *)path;
 
 - (AUGraph )augraph;
 
 - (void)setInputSource:(BOOL)isAcc;
+
+- (double)getCurrentTime;
 
 @end
 

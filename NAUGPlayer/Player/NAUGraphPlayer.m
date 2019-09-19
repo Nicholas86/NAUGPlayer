@@ -31,7 +31,7 @@
 
 - (void)createAudioSession
 {
-    [[NAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord];
+    [[NAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback]; /// 只支持音频播放
     [[NAudioSession sharedInstance] setPreferredSampleRate:44100];
     [[NAudioSession sharedInstance] setActive:YES];
     [[NAudioSession sharedInstance] addRouteChangeListener];
@@ -39,7 +39,13 @@
 
 - (void)createAudioUnit
 {
+    __weak typeof(self) weakSelf = self;
     _audioUnit = [[NAudioUnit alloc] initWithFilePath:_path];
+    _audioUnit.progress = ^(UInt32 mDataByteSize) {
+        if (mDataByteSize <= 0) {
+            [weakSelf stop];
+        }
+    };
 }
 
 - (BOOL)play
@@ -63,6 +69,11 @@
 - (void)setInputSource:(BOOL)isAcc
 {
     [_audioUnit setInputSource:isAcc];
+}
+
+- (double)getCurrentTime
+{
+    return [_audioUnit getCurrentTime];
 }
 
 #pragma mark - notification observer

@@ -14,6 +14,8 @@
     NAUGraphPlayer  *player;
 }
 @property(nonatomic, assign) BOOL   isAcc;
+@property (nonatomic , strong) CADisplayLink *mDispalyLink;
+@property (weak, nonatomic) IBOutlet UILabel *currentTimeLabel;
 
 @end
 
@@ -24,6 +26,9 @@
     // Do any additional setup after loading the view.
     
     _isAcc = NO;
+    self.mDispalyLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateFrame)];
+    self.mDispalyLink.frameInterval = 5;
+    [self.mDispalyLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
 }
 
 - (IBAction)start:(UIButton *)sender {
@@ -33,8 +38,8 @@
         [player stop];
     }
     
-//    NSString *filePath = [CommonUtil bundlePath:@"MiAmor.mp3"];
-    NSString *filePath = [CommonUtil bundlePath:@"MP3Sample.mp3"];
+    NSString *filePath = [CommonUtil bundlePath:@"MiAmor.mp3"];
+//    NSString *filePath = [CommonUtil bundlePath:@"MP3Sample.mp3"];
     
     //     NSString* filePath = [CommonUtil bundlePath:@"0fe2a7e9c51012210eaaa1e2b103b1b1.m4a"];
     
@@ -46,10 +51,17 @@
     [player play];
 }
 
-- (IBAction)stop:(UIButton *)sender {
+- (IBAction)stop:(UIButton *)sender
+{
     NSLog(@"Stop Music...");
     [player stop];
 }
 
+- (void)updateFrame
+{
+    if (player) {
+        self.currentTimeLabel.text = [NSString stringWithFormat:@"当前进度:%3d%%", (int)([player getCurrentTime] * 100)];
+    }
+}
 
 @end

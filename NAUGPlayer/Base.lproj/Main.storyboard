@@ -42,16 +42,32 @@
                                     <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gaY-Kh-7dT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JG-lu-hM6">
+                                <rect key="frame" x="30" y="374" width="354" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="j1v-GU-OC3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Rj-Sj-dgQ" secondAttribute="trailing" constant="30" id="HDE-Vo-fM3"/>
                             <constraint firstItem="aQS-1p-tQL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="TXD-YT-oAo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7JG-lu-hM6" secondAttribute="trailing" constant="30" id="Upb-bY-udY"/>
+                            <constraint firstItem="7JG-lu-hM6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gQg-2Y-8r1"/>
                             <constraint firstItem="aQS-1p-tQL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="unw-8w-UDV"/>
+                            <constraint firstItem="7JG-lu-hM6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="330" id="xnY-fJ-jNB"/>
                             <constraint firstItem="7Rj-Sj-dgQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="z1o-V0-yxc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="currentTimeLabel" destination="7JG-lu-hM6" id="YEd-Bz-ZGg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
