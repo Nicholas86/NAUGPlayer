@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F317F0B52335C9F4005BCB01 /* deadwithlife.flac in Resources */ = {isa = PBXBuildFile; fileRef = F317F0B42335C9F4005BCB01 /* deadwithlife.flac */; };
 		F3AD5C9523326FC1000F9C55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AD5C9423326FC1000F9C55 /* AppDelegate.m */; };
 		F3AD5C9823326FC1000F9C55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3AD5C9723326FC1000F9C55 /* ViewController.m */; };
 		F3AD5C9B23326FC1000F9C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AD5C9923326FC1000F9C55 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F317F0B42335C9F4005BCB01 /* deadwithlife.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = deadwithlife.flac; sourceTree = "<group>"; };
 		F3AD5C9023326FC1000F9C55 /* NAUGPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NAUGPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AD5C9323326FC1000F9C55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3AD5C9423326FC1000F9C55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 		F3AD5CD123327132000F9C55 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				F317F0B42335C9F4005BCB01 /* deadwithlife.flac */,
 				F3AD5CD223327132000F9C55 /* MP3Sample.mp3 */,
 				F3AD5CD323327132000F9C55 /* MiAmor.mp3 */,
 				F3AD5CD423327132000F9C55 /* CAFSample.caf */,
@@ -315,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F317F0B52335C9F4005BCB01 /* deadwithlife.flac in Resources */,
 				F3AD5CDA23327132000F9C55 /* M4ASample.m4a in Resources */,
 				F3AD5CA023326FC1000F9C55 /* LaunchScreen.storyboard in Resources */,
 				F3AD5CDB23327132000F9C55 /* 0fe2a7e9c51012210eaaa1e2b103b1b1.m4a in Resources */,
